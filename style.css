@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 20px;
+}
+
+body{
+    background: url('/imagen/fondo.jpg');
+    background-size: cover;
+}
+
+.Head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.Logo{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-left: 50px;
+    text-shadow: 0 0 15px yellow, 0 0 30px yellow , 0 0 50px yellow;
+    transition: all 2s;
+}
+.Logo:hover{
+    text-shadow: 0 0 15px #4D7EA8, 0 0 30px #4D7EA8, 0 0 50px #4D7EA8;
+ 
+}
+.Logo h2 {
+    font-size: 40px;
+    cursor: pointer;
+   
+}
+
+
+.Navbar{
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: 'Fugaz One', cursive;
+}
+
+.Navbar ul {
+    list-style: none;
+    color: wheat;
+}
+
+.Navbar li{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+.Navbar li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 15px #4D7EA8, 0 0 30px #4D7EA8, 0 0 50px #4D7EA8;
+    transition: all 1s;
+}
+.Navbar li a:hover{
+    color: #D11149;
+}
+
+/* Parte central */
+
+.Centro{ 
+    text-align: center;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    height: 50vh;
+    font-size: 30px;
+    flex-direction: column;
+}
+.Centro h1{
+    color: white;
+}
+.Centro .hijo{
+    font-family: 'Fugaz One', cursive;
+}
+
+span{
+    color: #FFF1D0;
+    text-shadow: 0 0 15px #05F140, 0 0 30px #05F140, 0 0 50px #05F140, 0 0 100px #05F140;
+}
+.s1{
+    color: white;
+    font-size: 60px;
+}
+
+
+/*boton
+.btn{
+    color: white;
+    padding: 10px;
+    background-color: #D11149;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Fugaz One', cursive;
+}
+*/
+
+.btn{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Fugaz One' , cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    animation: glow 8s linear infinite;
+}
+
+
+
+.btn::before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
