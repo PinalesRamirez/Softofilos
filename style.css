@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url('/imagen/fondo.jpg');
+    background: url('imagen/fondo.jpg');
     background-size: cover;
 }
 
